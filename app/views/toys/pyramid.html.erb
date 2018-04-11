@@ -79,20 +79,31 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<p style="margin-left: 15px">
-  Здравствуйте уважаемые гости! Добро пожаловать в наш магазин! Идея организации магазина
-  пришла после того, как у меня родился сын и
-</p>
-<p style="margin-left: 15px">
-  я стал ходить по детским магазинам, и когда я увидел цены на детские игрушки. Некоторые вещи просто
-  не должны столько стоить!!!
-</p>
-<p style="margin-left: 15px">
-А еще, мне не нравится, когда в игрушках продают монстриков, вампирчиков и всякую нечисть!!!!
-В итоге я открылся.
-</p>
-<p style="margin-left: 15px">
-Название магазина «Познавалкин» - игрушки для ответственных родителей!
-  Основное направление – развивающие игрушки.
-</p>
-<%= image_tag("/mains.jpg", class:"center", style: "margin-left: 15px")%>
+
+
+<table>
+  <thead>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th colspan="5"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @toys.each do |toy| %>
+    <tr style="display: block; Margin-bottom:30px">
+      <td><%= toy.name %> &nbsp</td>
+      <td><%= toy.cost %> руб. &nbsp</td>
+      <td><%= image_tag(toy.image, size: "100x100", alt: toy.image[1..-5]) %> &nbsp</td>
+      <td><%= link_to 'Полная информация', toy, class: "btn btn-default" %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Toy', new_toy_path %>
