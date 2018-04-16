@@ -13,6 +13,14 @@
     <div class="container-fluid">
       <p class="navbar-text">Развивающие игрушки для детей всех возрастов</p>
       <a href="/contakt" class="navbar-text">Контакты</a>
+      <%#= image_tag("/kalash1.jpg", size: "150x75")%>
+    </div>
+    <div class="container-fluid">
+      <%= image_tag("/kalash1.jpg", size: "170x100") %>
+      <%= image_tag("/kalash3.jpg", size: "170x100") %>
+      <%= image_tag("/kalash4.jpg", size: "170x100") %>
+      <%= image_tag("/kalash5.jpg", size: "170x100") %>
+      <%= image_tag("/kalash2.jpg", size: "170x100")%>
     </div>
     <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -106,4 +114,4 @@
 
 <br>
 
-<%= link_to 'New Toy', new_toy_path %>
+<%#= link_to 'New Toy', new_toy_path %>

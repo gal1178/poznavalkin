@@ -2,33 +2,87 @@
   <div class="container-fluid">
     <!-- Brand и toggle сгруппированы для лучшего отображения на мобильных дисплеях -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="/razrbs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Познавалкин</a>
+      <a class="navbar-brand" href="/" style="font-family: TatianaCTT">Познавалкин</a>
     </div>
-    <div class="container-fluid"><p class="navbar-text">Развивающие игрушки для детей всех возрастов</p></div>
-
+    <div class="container-fluid">
+      <p class="navbar-text">Развивающие игрушки для детей всех возрастов</p>
+      <a href="/contakt" class="navbar-text">Контакты</a>
+      <%#= image_tag("/kalash1.jpg", size: "150x75")%>
+    </div>
+    <div class="container-fluid">
+      <%= image_tag("/kalash1.jpg", size: "170x100") %>
+      <%= image_tag("/kalash3.jpg", size: "170x100") %>
+      <%= image_tag("/kalash4.jpg", size: "170x100") %>
+      <%= image_tag("/kalash5.jpg", size: "170x100") %>
+      <%= image_tag("/kalash2.jpg", size: "170x100")%>
+    </div>
     <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <!--<li class="active"><a href="#">Каталог <span class="sr-only">(current)</span></a></li>-->
+        <!--<li class="active"><a href="/razr">Каталог <span class="sr-only">(current)</span></a></li>-->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
+          <a href="/razr" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Деревянные игрушки <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Английский</a></li>
-            <li><a href="#">Развивающие</a></li>
-            <li><a href="#">Настольные игры</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">LEGO</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="http://0.0.0.0:3000/toys">Все игрушки</a></li>
+            <li><a href="/shumelki">Шумелки</a></li>
+            <li><a href="/pyramid">Пирамидки</a></li>
+            <li><a href="/lacing">Шнуровки</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="/puzzlespictures">Пазлы-картинки</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="/looseleaves">Вкладыши</a></li>
+            <li><a href="/sorters">Сортеры</a></li>
+            <li><a href="/cubes">Кубики</a></li>
+            <li><a href="/boardgames">Настольные игры</a></li>
+            <li><a href="/constructors">Конструкторы</a></li>
+            <li><a href="/creatorskit">Наборы для творчества</a></li>
+            <li><a href="/puzzles">Пазлы</a></li>
           </ul>
         </li>
-        <li><a href="http://0.0.0.0:3000/contakt">Контакты</a></li>
+        <li class="dropdown">
+          <a href="/razr" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Обучающие игры <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/learningtoread">Обучение чтению</a></li>
+            <li><a href="/westudythealphabet">Изучаем алфавит</a></li>
+            <li><a href="/languageandcommunication">Язык и коммуникация</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="/accounteducation">Обучение счету</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="/developmentoflogicalthinking">Развитие логического мышления</a></li>
+            <li><a href="/developmentofmemoryandattention">Развитие памяти и внимания</a></li>
+            <li><a href="/colorsandshapes">Цвета и формы</a></li>
+            <li><a href="/theworld">Окружающий мир</a></li>
+          </ul>
+        </li>
+        <li><a href="/puzzlegames">Головоломки</a></li>
+        <li class="dropdown">
+          <a href="/razr" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Настольные игры <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/teaching">Обучающие</a></li>
+            <li><a href="/developing">Развивающие</a></li>
+            <li><a href="/merry">Веселые</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="/forthecompany">Для компании</a></li>
+          </ul>
+        </li>
+        <li><a href="/constructor">Конструкторы</a></li>
+        <li class="dropdown">
+          <a href="/razr" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Остальное <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/massformodeling">Масса для лепки</a></li>
+            <li><a href="/sandformodeling">Песок для лепки</a></li>
+            <li><a href="/puzzle">Пазлы</a></li>
+            <!--<li role="separator" class="divider"></li>-->
+            <li><a href="/creation">Творчество</a></li>
+            <li><a href="/printedproducts">Печатная продукция</a></li>
+            <li><a href="/plaything">Игрушки</a></li>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -55,5 +109,5 @@
   <%= @toy.info %>
 </p>
 
-<%= link_to 'Edit', edit_toy_path(@toy) %> |
-<%= link_to 'Back', toys_path %>
+<!--<%#= link_to 'Edit', edit_toy_path(@toy) %> |-->
+<%= link_to 'Назад', :back , class: "btn btn-default"%>
