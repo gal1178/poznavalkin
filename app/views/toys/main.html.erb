@@ -8,11 +8,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/" style="font-family: TatianaCTT">Познавалкин</a>
+      <a class="navbar-brand" href="/" style="margin-top: 15px"><%= image_tag("/brand.jpeg") %></a>
     </div>
     <div class="container-fluid">
-      <p class="navbar-text">Развивающие игрушки для детей всех возрастов</p>
-      <a href="/contakt" class="navbar-text">Контакты</a>
+      <%= image_tag("/nadpis.jpeg", class: "navbar-text") %>
+      <a href="/contakt" class="navbar-text" style="margin-top: 60px">Наши контакты</a>
       <%#= image_tag("/kalash1.jpg", size: "150x75")%>
     </div>
     <div class="container-fluid">
@@ -87,20 +87,27 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<p style="margin-left: 15px">
-  Здравствуйте уважаемые гости! Добро пожаловать в наш магазин! Идея организации магазина
-  пришла после того, как у меня родился сын и
-</p>
-<p style="margin-left: 15px">
-  я стал ходить по детским магазинам, и когда я увидел цены на детские игрушки. Некоторые вещи просто
-  не должны столько стоить!!!
-</p>
-<p style="margin-left: 15px">
-А еще, мне не нравится, когда в игрушках продают монстриков, вампирчиков и всякую нечисть!!!!
-В итоге я открылся.
-</p>
-<p style="margin-left: 15px">
-Название магазина «Познавалкин» - игрушки для ответственных родителей!
-  Основное направление – развивающие игрушки.
-</p>
+<div id="maintitle" style="display: block; width: 900px;outline: 2px solid #389f68; margin-left: 15px">
+  <p style="margin-left: 15px">
+    Здравствуйте уважаемые гости!
+  </p>
+  <p style="margin-left: 15px">
+    Добро пожаловать в наш магазин!
+  </p>
+  <p style="margin-left: 15px">
+    Идея открытия магазина пришла после того, как в моей семье родился сын и мне пришлось ходить по детским магазинам.
+  </p>
+  <p style="margin-left: 15px">
+     Цены на некоторые игрушки меня просто шокировали!!! Именно это и было основным побудительным мотивом для вызревания идеи))
+  </p>
+  <p style="margin-left: 15px">
+    А еще, мне очень не нравится, когда в магазинах игрушек продают монстриков, вампирчиков и всякую нечисть!!!!
+  </p>
+  <p style="margin-left: 15px">
+    В итоге я открылся. Название магазина «Познавалкин» - детские игрушки для ответственных родителей!
+  </p>
+  <p style="margin-left: 15px">
+    Основное направление – развивающие игрушки.
+  </p>
+</div>
 <%= image_tag("/mains.jpg", class:"center", style: "margin-left: 15px")%>
